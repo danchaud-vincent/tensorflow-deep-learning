@@ -4,3 +4,17 @@ This repo contains all the course materials and exercices for the [Zero to Maste
 
 
 ## Course Notebooks
+
+### Appendix
+
+- Introduction to Pandas for Data Analysis
+- Intoduction to Numpy
+
+Exercises are based off (and directly taken from) the quick introduction to pandas notebook and numpy notebook.
+
+### NoteBooks
+
+| Number | Notebook | Data/Model | Exercices |
+| ------------- |:-------------:|:-------------:|-----:|
+| 00 | TensorFlow Fundamentals|  | Go to exercises |
+
