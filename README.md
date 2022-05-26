@@ -14,7 +14,10 @@ Exercises are based off (and directly taken from) the quick introduction to pand
 
 ### NoteBooks
 
-| Number | Notebook | Data/Model | Exercices |
+| **Number** | **Notebook** | **Data/Model** | **Exercices** |
 | ------------- |:-------------:|:-------------:|-----:|
-| 00 | TensorFlow Fundamentals|  | Go to exercises |
+| 00 | TensorFlow Fundamentals |  | Go to exercises |
+| 01 | TensorFlow Regression |  | Go to exercises |
+| 02 | TensorFlow Classification |  | Go to exercises |
+| 03 | TensorFlow Computer Vision| `pizza_steak`, `10_food_classes_all_data` | Go to exercises |
 
