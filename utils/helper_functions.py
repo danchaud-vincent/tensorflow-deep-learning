@@ -1,5 +1,4 @@
 ### Python files containing helpful functions 
-
 import tensorflow as tf
 import zipfile
 import os
@@ -10,13 +9,12 @@ import matplotlib.pyplot as plt
 
 
 def unzip_data(filename):
-	"""
-	Unzip filename into the current directory 
+    """
+    Unzip filename into the current directory 
     
     Arguments:
     - filename (str): a filepath to a target zip folder to be unzipped
-	"""
-    
+    """
     zip_ref = zipfile.ZipFile(filename,"r")
     zip_ref = zip_ref.extractall()
     zip_ref.close()
@@ -29,7 +27,6 @@ def walk_through_dir(dir_path):
     Arguments:
     - dirname (str): target directory
     """
-    
     
     for dirpath, dirnames, filenames in os.walk(dir_path):
         print(f"{dirpath}: There are {len(dirnames)} directories and {len(filenames)} files")
