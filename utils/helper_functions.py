@@ -4,6 +4,10 @@ import tensorflow as tf
 import zipfile
 import os
 import datetime
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
 
 def unzip_data(filename):
 	"""
@@ -56,3 +60,38 @@ def create_tensorboard_callback(dir_name, experiment_name):
     return tensorboard_callback
     
 
+def plot_loss_curves(history):
+
+    """
+    Returns separate loss curves for training and validation metrics
+    
+    Arguments:
+    - history : TensorFlow model history object
+    """
+    
+    # Loss
+    loss_train = history.history["loss"]
+    loss_validation = history.history["val_loss"]
+    
+    # accuracy
+    acc_train = history.history["accuracy"]
+    acc_validation = history.history["val_accuracy"]
+    
+    # figure
+    fig, axs = plt.figure(1,2, figsize=(10,7))
+    
+    # accuracy axe
+    axs[0].plot(acc_train, label="train accuracy")
+    axs[0].plot(acc_validation, label="validation accuracy")
+    axs[0].set_title("Accuracy")
+    axs[0].set_xlabel("Epochs")
+    axs[0].legend()
+    
+    # loss axe
+    axs[1].plot(acc_train, label="train loss")
+    axs[1].plot(acc_validation, label="validation loss")
+    axs[1].set_title("Loss")
+    axs[1].set_xlabel("Epochs")
+    axs[1].legend()
+    
+    plt.show()
