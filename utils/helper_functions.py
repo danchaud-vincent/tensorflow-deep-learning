@@ -16,7 +16,7 @@ def unzip_data(filename):
     - filename (str): a filepath to a target zip folder to be unzipped
     """
     zip_ref = zipfile.ZipFile(filename,"r")
-    zip_ref = zip_ref.extractall()
+    zip_ref.extractall()
     zip_ref.close()
  
 
