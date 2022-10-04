@@ -85,8 +85,8 @@ def plot_loss_curves(history):
     axs[0].legend()
     
     # loss axe
-    axs[1].plot(acc_train, label="train loss")
-    axs[1].plot(acc_validation, label="validation loss")
+    axs[1].plot(loss_train, label="train loss")
+    axs[1].plot(loss_validation, label="validation loss")
     axs[1].set_title("Loss")
     axs[1].set_xlabel("Epochs")
     axs[1].legend()
