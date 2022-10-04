@@ -75,7 +75,7 @@ def plot_loss_curves(history):
     acc_validation = history.history["val_accuracy"]
     
     # figure
-    fig, axs = plt.figure(1,2, figsize=(10,7))
+    fig, axs = plt.subplots(1,2, figsize=(10,7))
     
     # accuracy axe
     axs[0].plot(acc_train, label="train accuracy")
